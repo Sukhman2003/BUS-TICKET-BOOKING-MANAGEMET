@@ -1,16 +1,18 @@
 import java.util.*;
+import java.io.IOException;
 public class BusReservationAndTicketingSystem {
 
     public static void main(String args[]) throws IOException {
         Scanner in = new Scanner(System.in);
 for(int i=1;i<4;){
             System.out.print("Enter Username: ");
-            user = in.next();
+            Object user = in.next();
             System.out.print("Enter Password: ");
-            password = in.next();
+            String password = in.next();
 
 
             for(int o=1; o<=5; o++){
+                int[] available;
                 available[o]=20;
             }
 
@@ -18,7 +20,11 @@ for(int i=1;i<4;){
             if(user.equals("admin") && password.equals("admin")){
                       /* here the rest of code */
                    }
-            }
+            
             else{
                 System.out.println("\nInvalid user or password!\n");
                 i++;
+            }
+        }
+    }
+}
